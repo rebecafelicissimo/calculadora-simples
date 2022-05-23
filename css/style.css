@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3em;
+}
+
+#calculadora {
+  width: 400px;
+  padding: .5em;
+  background-color: #C4C4C4;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+#calculadora h3 {
+  font-size: .8em;
+  font-weight: 300;
+  color: #666;
+}
+
+#operations {
+  text-align: right;
+}
+
+#previousOperation,
+#currentOperation {
+  padding: .2em;
+  overflow-wrap: break-word; /* Permite que o navegador tenha permissão para quebrar linhas com palavras longas, se elas ultrapassarem o contêiner: */
+  min-height: 1.6em;
+}
+
+#previousOperation {
+  color: #777;  
+}
+
+#currentOperation {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+#buttonsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3px;
+}
+
+#buttonsContainer button {
+  border: 1px solid transparent;
+  border-radius: 0;
+  height: 4em;
+  font-size: 1.2em;
+  background-color: #DBDBDB;  
+  cursor: pointer;
+}
+
+#buttonsContainer button.number {
+  background-color: #F3F3F3;
+}
+
+#buttonsContainer button:hover {
+  background-color: #BABABA;
+  border-color: #999;
+}
+
+#buttonsContainer button#equalButton {
+  grid-column: span 2;
+  background-color: #75A5CB;
+}
+
+#buttonsContainer button#equalButton:hover {
+  background-color: #3A91D8;
+}
+
+
+
+
